@@ -11,5 +11,48 @@
     <link rel="stylesheet" href="./CSS/styles.css" />
     <script defer src="./JS/index.js"></script>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="card-shape">
+        <div class="card-front"></div>
+        <div class="card-back"></div>
+      </div>
+
+      <div class="card-details">
+        <form>
+          <div class="cardname-holder">
+            <label for="card-name">CARDHOLDER NAME</label>
+            <input
+              type="text"
+              id="card-name"
+              placeholder="e.g. Jane Appleseed"
+            />
+          </div>
+
+          <div class="cardname-holder">
+            <label for="card-id">CARD NUMBER</label>
+            <input
+              type="text"
+              id="card-id"
+              placeholder="e.g. 1234 5678 9123 0000"
+            />
+          </div>
+
+          <div class="other-details">
+            <div class="exp-date">
+              <label for="card-exp-num">EXP. DATE (MM / YY)</label>
+              <input type="number" id="card-exp-num" placeholder="MM" />
+
+              <input type="number" id="card-exp-num" placeholder="YY" />
+            </div>
+
+            <div class="cvc">
+              <label for="cvc-num">CVC</label>
+              <input type="text" id="cvc-num" placeholder="e.g. 123" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
