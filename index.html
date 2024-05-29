@@ -12,14 +12,19 @@
     <script defer src="./JS/index.js"></script>
   </head>
   <body>
+    <!-- The page container -->
     <div class="container">
+      <!-- The card place -->
       <div class="card-shape">
+        <!-- The card front & back -->
         <div class="card-front"></div>
         <div class="card-back"></div>
       </div>
 
+      <!-- Card details -->
       <div class="card-details">
         <form>
+          <!-- Card name -->
           <div class="cardname-holder">
             <label for="card-name">CARDHOLDER NAME</label>
             <input
@@ -29,15 +34,17 @@
             />
           </div>
 
-          <div class="cardname-holder">
-            <label for="card-id">CARD NUMBER</label>
+          <!-- card number -->
+          <div class="cardnumber-holder">
+            <label for="card-num">CARD NUMBER</label>
             <input
               type="text"
-              id="card-id"
+              id="card-num"
               placeholder="e.g. 1234 5678 9123 0000"
             />
           </div>
 
+          <!-- Card expire date -->
           <div class="other-details">
             <div class="exp-date">
               <label for="card-exp-num">EXP. DATE (MM / YY)</label>
@@ -46,6 +53,7 @@
               <input type="number" id="card-exp-num" placeholder="YY" />
             </div>
 
+            <!-- Card security code (CVC) -->
             <div class="cvc">
               <label for="cvc-num">CVC</label>
               <input type="text" id="cvc-num" placeholder="e.g. 123" />
