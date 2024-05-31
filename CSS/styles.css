@@ -110,7 +110,7 @@ body {
   width: 5rem;
 }
 .container .card-details form .other-details .cvc {
-  width: 30%;
+  width: 12rem;
   display: flex;
   flex-direction: column;
   gap: 7px;
