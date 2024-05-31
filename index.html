@@ -41,13 +41,13 @@
 
           <!-- Card name holder and expire date -->
           <div class="card-name-exp">
-            <p>JANE APPLESSED</p>
+            <p class="name-holder-card">JANE APPLESEED</p>
 
-            <p>00/00</p>
+            <p class="exp-date-card">00/00</p>
           </div>
         </div>
 
-        <!-- The card front -->
+        <!-- The card back -->
         <div class="card-back">
           <!-- Card CVC -->
           <div class="cvc">
@@ -79,13 +79,15 @@
             />
           </div>
 
-          <!-- Card expire date -->
+          <!-- Card expire date & CVC -->
           <div class="other-details">
             <div class="exp-date">
               <label for="card-exp-num">EXP. DATE (MM / YY)</label>
-              <input type="number" id="card-exp-num" placeholder="MM" />
 
-              <input type="number" id="card-exp-num" placeholder="YY" />
+              <div class="exp-date-wrapper">
+                <input type="text" id="card-exp-num" placeholder="MM" />
+                <input type="text" id="card-exp-num" placeholder="YY" />
+              </div>
             </div>
 
             <!-- Card security code (CVC) -->
@@ -93,8 +95,10 @@
               <label for="cvc-num">CVC</label>
               <input type="text" id="cvc-num" placeholder="e.g. 123" />
             </div>
+          </div>
 
-            <!-- Confirming button -->
+          <!-- Confirming button -->
+          <div class="confirming-btn">
             <button>Confirm</button>
           </div>
         </form>
